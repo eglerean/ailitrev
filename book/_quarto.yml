@@ -11,6 +11,7 @@ book:
     - index.qmd
     - ch01-chapter-one.qmd
     - ch02-chapter-two.qmd
+    - ch03-chapter-three.qmd
 
 format:
   html:
