@@ -1,0 +1,125 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9AA0A6"/>
+    </marker>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#3A3A3A"/>
+    </marker>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2E6DA4"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C0392B"/>
+    </marker>
+  </defs>
+
+  <!-- card background -->
+  <rect x="4" y="4" width="1192" height="692" rx="14" fill="#FAFAFA" stroke="#D8D8D8" stroke-width="1.5"/>
+
+  <!-- title -->
+  <text x="600" y="42" text-anchor="middle" font-size="24" font-weight="700" fill="#1A1A1A" letter-spacing="0.5">AI Autonomy in Literature Reviewing</text>
+
+  <!-- human-driven / ai-driven arrow -->
+  <text x="70" y="80" font-size="13" font-weight="700" fill="#2E6DA4">HUMAN-DRIVEN</text>
+  <text x="1130" y="80" text-anchor="end" font-size="13" font-weight="700" fill="#C0392B">AI-DRIVEN</text>
+  <line x1="230" y1="76" x2="970" y2="76" stroke="#9AA0A6" stroke-width="2" marker-start="url(#arrowGray)" marker-end="url(#arrowGray)"/>
+
+  <!-- 5 column centers: 150, 375, 600, 825, 1050 ; column half-width ~105 -->
+
+  <!-- column separators -->
+  <line x1="262" y1="110" x2="262" y2="345" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="487" y1="110" x2="487" y2="345" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="712" y1="110" x2="712" y2="345" stroke="#E5E5E5" stroke-width="1"/>
+  <line x1="937" y1="110" x2="937" y2="345" stroke="#E5E5E5" stroke-width="1"/>
+
+  <!-- column headers -->
+  <text x="150" y="128" text-anchor="middle" font-size="19" font-weight="700" fill="#2E6DA4">CONSULT</text>
+  <text x="375" y="128" text-anchor="middle" font-size="19" font-weight="700" fill="#2F8F8F">DISCOVER</text>
+  <text x="600" y="128" text-anchor="middle" font-size="19" font-weight="700" fill="#C9861C">ASSIST</text>
+  <text x="825" y="128" text-anchor="middle" font-size="19" font-weight="700" fill="#D9622B">DELEGATE</text>
+  <text x="1050" y="128" text-anchor="middle" font-size="19" font-weight="700" fill="#C0392B">AUTONOMOUS</text>
+
+  <!-- example prompts (italic quotes) -->
+  <text x="150" y="154" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">"Help me</text>
+  <text x="150" y="170" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">search"</text>
+
+  <text x="375" y="154" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">"Help me</text>
+  <text x="375" y="170" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">find"</text>
+
+  <text x="600" y="154" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">"Help me</text>
+  <text x="600" y="170" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">process"</text>
+
+  <text x="825" y="154" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">"Carry out</text>
+  <text x="825" y="170" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">the review"</text>
+
+  <text x="1050" y="154" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">"Review this</text>
+  <text x="1050" y="170" text-anchor="middle" font-size="12.5" font-style="italic" fill="#444">topic"</text>
+
+  <!-- down arrows -->
+  <line x1="150" y1="182" x2="150" y2="206" stroke="#3A3A3A" stroke-width="1.75" marker-end="url(#arrowDark)"/>
+  <line x1="375" y1="182" x2="375" y2="206" stroke="#3A3A3A" stroke-width="1.75" marker-end="url(#arrowDark)"/>
+  <line x1="600" y1="182" x2="600" y2="206" stroke="#3A3A3A" stroke-width="1.75" marker-end="url(#arrowDark)"/>
+  <line x1="825" y1="182" x2="825" y2="206" stroke="#3A3A3A" stroke-width="1.75" marker-end="url(#arrowDark)"/>
+  <line x1="1050" y1="182" x2="1050" y2="206" stroke="#3A3A3A" stroke-width="1.75" marker-end="url(#arrowDark)"/>
+
+  <!-- dimension labels -->
+  <text x="150" y="228" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1A1A1A">WORDING</text>
+  <text x="375" y="228" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1A1A1A">RETRIEVAL</text>
+  <text x="600" y="228" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1A1A1A">RELEVANCE</text>
+  <text x="825" y="228" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1A1A1A">EXTRACTION</text>
+  <text x="1050" y="221" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1A1A1A">INTERPRETATION</text>
+  <text x="1050" y="238" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1A1A1A">→ SYNTHESIS</text>
+
+  <!-- connecting arrows between dimension labels -->
+  <line x1="204" y1="228" x2="258" y2="228" stroke="#9AA0A6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <line x1="440" y1="228" x2="483" y2="228" stroke="#9AA0A6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <line x1="665" y1="228" x2="708" y2="228" stroke="#9AA0A6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <line x1="890" y1="228" x2="933" y2="228" stroke="#9AA0A6" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+
+  <!-- examples caption -->
+  <text x="600" y="264" text-anchor="middle" font-size="12" font-style="italic" fill="#666">examples of methodological decisions gradually delegated to AI</text>
+
+  <!-- example word lists (3 lines each) -->
+  <text x="150" y="290" text-anchor="middle" font-size="12.5" fill="#333">synonyms</text>
+  <text x="150" y="308" text-anchor="middle" font-size="12.5" fill="#333">concepts</text>
+  <text x="150" y="326" text-anchor="middle" font-size="12.5" fill="#333">query terms</text>
+
+  <text x="375" y="290" text-anchor="middle" font-size="12.5" fill="#333">what to find</text>
+  <text x="375" y="308" text-anchor="middle" font-size="12.5" fill="#333">where to search</text>
+  <text x="375" y="326" text-anchor="middle" font-size="12.5" fill="#333">similar papers</text>
+
+  <text x="600" y="290" text-anchor="middle" font-size="12.5" fill="#333">what matters</text>
+  <text x="600" y="308" text-anchor="middle" font-size="12.5" fill="#333">include / exclude</text>
+  <text x="600" y="326" text-anchor="middle" font-size="12.5" fill="#333">prioritisation</text>
+
+  <text x="825" y="290" text-anchor="middle" font-size="12.5" fill="#333">what data</text>
+  <text x="825" y="308" text-anchor="middle" font-size="12.5" fill="#333">to extract</text>
+  <text x="825" y="326" text-anchor="middle" font-size="12.5" fill="#333">categorise</text>
+
+  <text x="1050" y="290" text-anchor="middle" font-size="12.5" fill="#333">what it</text>
+  <text x="1050" y="308" text-anchor="middle" font-size="12.5" fill="#333">means</text>
+  <text x="1050" y="326" text-anchor="middle" font-size="12.5" fill="#333">conclude</text>
+
+  <!-- divider -->
+  <line x1="40" y1="360" x2="1160" y2="360" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- human methodological control gradient bar -->
+  <text x="40" y="392" font-size="14" font-weight="700" fill="#1A1A1A">Human methodological control</text>
+  <text x="70" y="422" font-size="13" font-weight="700" fill="#2E6DA4">HIGH</text>
+  <line x1="115" y1="418" x2="1085" y2="418" stroke="#9AA0A6" stroke-width="2" marker-start="url(#arrowBlue)"/>
+  <text x="1130" y="422" text-anchor="end" font-size="13" font-weight="700" fill="#666">LOW</text>
+
+  <!-- need for validation gradient bar -->
+  <text x="40" y="460" font-size="14" font-weight="700" fill="#1A1A1A">Need for transparency, verification and validation</text>
+  <text x="70" y="490" font-size="13" font-weight="700" fill="#666">LOW</text>
+  <line x1="115" y1="486" x2="1085" y2="486" stroke="#9AA0A6" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="1130" y="490" text-anchor="end" font-size="13" font-weight="700" fill="#C0392B">HIGH</text>
+
+  <!-- divider -->
+  <line x1="40" y1="520" x2="1160" y2="520" stroke="#E0E0E0" stroke-width="1"/>
+
+  <!-- footer -->
+  <text x="600" y="558" text-anchor="middle" font-size="16" font-weight="700" fill="#1A1A1A">More AI ≠ better review.</text>
+  <text x="600" y="586" text-anchor="middle" font-size="14" fill="#333">Moving right means delegating increasingly consequential decisions.</text>
+</svg>

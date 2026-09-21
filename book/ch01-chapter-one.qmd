@@ -5,164 +5,115 @@ title: "Chapter 1: Foundations of AI in Research"
 ::: {.callout-warning}
 ## Draft — Not Yet Reviewed
 
-This chapter is a work in progress. More sections are still to come; content below is subject to revision.
+This chapter is a work in progress. Content below is subject to revision.
 :::
 
 ## Basics of AI
 
-A fast, bullet-point primer on what AI is, where generative AI fits into the research workflow, and how to use it responsibly — condensed from Aalto's institutional guidance on AI in research.
+Artificial intelligence tools — generative AI in particular — are now used throughout the research lifecycle, from literature search to software coding to editing manuscripts. This section is a primer on what AI actually is in a research context, where it can help, where it can get you into trouble, and how to disclose using it — adapted from Aalto University's institutional guidance on AI in research.
 
 ::: {.callout-note}
 ## Learning Outcomes
 
 By the end of this section you will be able to:
 
-- Distinguish AI as a topic, a method, and a tool in research
-- Identify where generative AI can help across the research lifecycle
-- Recognize the misconduct risks of fabrication, falsification, and plagiarism
-- Judge how much you can safely delegate to AI, based on your expertise and the stakes of the output
-- Know when AI use must be disclosed — and how to write that disclosure
+- Distinguish AI as a topic, a method, and a tool in research, and explain why the "tool" framing is the one that applies to most researchers
+- Identify where generative AI can help across the seven stages of the research lifecycle, using both a reference table and a figure
+- Recognize the misconduct risks of fabrication, falsification, and plagiarism, and apply the rule of thumb for when AI output is safe to use
+- Read a 2×2 matrix to judge how much you can safely delegate to AI, based on your own expertise and the stakes of the output
+- Know when AI use must be disclosed under common publisher policy, and write a disclosure statement that meets that bar
+
 :::
 
 ### What Is AI?
 
-Three roles AI can play in your research:
+"AI" is a genuinely vague term, and a lot of confusion in research settings comes from people talking past each other because they mean different things by it. In a research context, AI can play three distinct roles, and it matters which one you're actually doing:
 
-- **AI as a Topic** — studying AI itself (e.g. its ethics, impact, mechanisms)
-- **AI as a Method** — using ML/AI as your analysis approach
-- **AI as a Tool** — using AI applications to assist non-AI tasks
+- **AI as a Topic** — studying AI itself: human–chatbot interaction, new machine learning algorithms, the societal impact of automation. Here, AI *is* the research question
+- **AI as a Method** — using machine learning or other AI techniques as your analysis approach: classification, prediction, clustering. Here, AI is the instrument you use to answer a different research question
+- **AI as a Tool** — using an application with an AI (often generative AI) component to assist a task that isn't itself about AI: proofreading a manuscript, debugging code, drafting an outline. Here, AI is closer to a very capable piece of software than to a research method
 
-This section focuses on the third: **generative AI as a tool**.
+For the large majority of researchers — including those who neither study AI nor use it as a method — AI shows up in the third role. Even if your field has nothing to do with machine learning, you are still very likely to encounter generative AI as a tool sitting next to your text editor, your code, or your inbox. This chapter, and this book more broadly, focuses on exactly that: **generative AI as a tool** for research work, not as a research topic or method in its own right.
 
 ### Generative AI Across the Research Lifecycle
 
-Generative AI can assist at every stage:
+Generative AI tools can plausibly assist at every stage of the research process, not just the writing at the end. The table below gives concrete examples at each stage:
 
-- **Planning** — literature search, grant drafting, brainstorming
-- **Data collection** — survey design, synthetic data, simulations
-- **Pre-processing** — formatting, quality checks, cleaning
-- **Analysis** — code generation, annotation
-- **Preservation** — documentation, metadata
-- **Sharing** — manuscript drafting, press releases
-- **Reuse** — code documentation, dataset descriptions
+| Stage | Examples of AI assistance |
+|---|---|
+| Planning | Literature search, grant drafting, research question brainstorming |
+| Data collection | Survey design, data synthesis, simulations |
+| Pre-processing | Formatting, quality checks, data cleaning |
+| Analysis | Analysis code generation, qualitative annotations |
+| Preservation | Documentation, README generation, metadata |
+| Sharing | Manuscript drafting, press releases, social media posts |
+| Reuse | Code documentation, dataset descriptions |
+
+The same stages are shown visually below, arranged around the research cycle with Responsible Conduct of Research (RCR) — ethics and law — placed deliberately at the center, since it applies to every stage rather than being a separate step of its own:
+
+![The research process aided by AI tools, with Responsible Conduct of Research at its core. Each of the seven stages — Plan, Collect, Process, Analyse, Preserve, Share, Reuse — lists concrete examples of where generative AI can assist. (Source: Glerean & Silva, 2026, CC-BY; original cycle diagram from rdmkit.elixir-europe.org, "The data lifecycle")](images/ch01/ai-research-lifecycle.png){fig-alt="A circular diagram showing seven research lifecycle stages — Plan, Collect, Process, Analyse, Preserve, Share, Reuse — arranged around a central RCR (Responsible Conduct of Research, Ethics and Law) hub, with bullet-point examples of AI assistance next to each stage"}
+
+It's worth being explicit about something the table and figure can't show on their own: **every one of these uses carries risk**, and no task is universally safe or universally reckless with AI — it depends on the context and on the judgment of the person using the tool. As a responsible researcher, your job is to evaluate that risk *before* deciding whether to proceed with a given task, for a given stage, with a given tool. If you're unsure, talk it through with peers rather than guessing, or simply skip AI for that specific task. The next two sections give you concrete ways to make that judgment call.
 
 ### Avoiding Research Misconduct
 
-Three risks to watch for:
+Used carelessly, generative AI can walk you straight into research misconduct — not through malicious intent, but because of how these systems actually work. There are three classic forms of misconduct that AI makes easy to stumble into:
 
-- **Fabrication** — AI generates plausible but nonexistent text, references, or statistics
-- **Falsification** — AI predicts a statistically likely output without genuine reasoning
-- **Plagiarism** — AI synthesizes text without proper attribution
+- **Fabrication** — generative AI *hallucinates*: it produces sensible-looking text, references, statistics, and data that simply do not exist. This is not a rare glitch; it's a structural property of how these models generate text (see the [appendix on how LLMs work](appendix-llms-and-agents.qmd) for why)
+- **Falsification** — generative AI tools do not reason the way humans do. They produce the statistically likely output given their training data and your input, which is a fundamentally different process from genuine reasoning about evidence. Using AI to produce research findings or interpret results therefore carries a high risk of false conclusions
+- **Plagiarism** — generative AI output can be based directly on someone else's research results. Presenting that output as your own findings, without properly citing the original work, can constitute plagiarism even when you never consciously copied anything
 
-> If you cannot verify GenAI output, don't use it beyond brainstorming.
+A simple rule of thumb ties all three together:
+
+> If you do not have the ability or the resources to verify the output of a GenAI system — by finding the citations it claims exist, by confirming that someone else's work is summarized correctly, by detecting plagiarized text or code, by independently checking the analysis — then you should not use that output beyond self-learning or brainstorming.
 
 ### Evaluating Risk: Expertise × Output-Risk
 
-Weigh two factors before delegating a task to AI: your **expertise** on it, and the **importance of the output** (e.g. peer-reviewed claim vs. low-stakes draft).
+Not all AI use is equally risky, and treating every use case the same way is neither realistic nor useful. If you're unsure how cautious to be about a specific task, two factors do most of the work in answering that question:
 
-- **High expertise, high risk** — OK to use AI, but only for simple sub-tasks you can fully review
-- **Low expertise, high risk** — use AI only for brainstorming; go back to original sources
-- **High expertise, low risk** — safe to delegate most of the work to AI
-- **Low expertise, low risk** — usable, but accept a non-zero chance of error
+- **Your expertise** on the specific task you're delegating to AI
+- **The importance of the output** — will it be submitted for peer review, or is it something lower-stakes, like a workshop webpage?
+
+Crossing those two factors gives a 2×2 matrix, with a concrete recommendation and worked example in each quadrant:
+
+| | Low expertise | High expertise |
+|---|---|---|
+| **High risk**<br>*(peer-review submission: text, code, figures, references)* | Use AI only to **brainstorm**: ask it what sources to read, get keyword suggestions, then go read the real sources.<br><br>*Example: ask which statistical methods might fit your data, then go read about them yourself rather than trusting the AI's explanation.* | Use AI for **simple delegated tasks you can fully review**. Check everything as carefully as if you had retyped it yourself — this is where overconfidence is most dangerous.<br><br>*Example: generating short code snippets function-by-function; asking AI to mark suggested text changes in bold so you decide which to apply manually.* |
+| **Low risk**<br>*(event webpage, social media post, presentation)* | Use AI, but **accept a non-zero chance of errors** slipping through.<br><br>*Example: getting help with CSS for a workshop webpage, or "vibe-coding" a small demo.* | **Delegate most of the work to AI.** Verify that the output makes sense.<br><br>*Example: generating documentation for scripts you already wrote, or drafting a presentation outline from a transcript of your own recording.* |
+
+A few notes on reading this matrix:
+
+- The sensitivity of your *data* raises the risk level on top of everything above — with confidential or personal data, you have to think not only about how you use a tool, but which tool you're allowed to use at all
+- A special case is generated software code where correctness can be formally checked with automated unit tests: if the tests are well-designed and actually cover the relevant behavior, this can lower the effective risk level — but it shifts the quality bar onto the tests themselves, which now need to be trustworthy
+- Some situations won't fit neatly into any of the four quadrants. You remain the person ultimately responsible for judging whether a given use of AI is appropriate — the matrix is a starting heuristic, not a substitute for that judgment
 
 ### Disclosing AI Use
 
-- **No declaration needed** — grammar and typo fixes only
-- **Declaration required** — text synthesis, code generation, figure creation, analysis suggestions, section drafting
-- **AI-generated images** — acceptable only to illustrate methodology; never to illustrate results
-- **Disclosure template**:
+Disclosure expectations for AI use are grounded in the same four principles as research integrity generally: reliability, honesty, respect, and accountability (per the ALLEA European Code of Conduct). In practice, this comes down to two concrete questions when preparing a manuscript: *does this need to be declared*, and *if so, how*?
 
-  > During preparation, author(s) used [TOOL] for [REASON]. Content was reviewed; author(s) take full responsibility.
+**What to declare.** Using Elsevier's publisher guidance as a representative example (always check your own target journal's or funder's specific policy first):
+
+- **No declaration needed** — fixing typos and grammar only
+- **Declaration required** — any synthesis of text, generation of code, creation of figures, suggestion of analysis approaches, or drafting of any section
+- **AI-generated images** — acceptable only for illustrating a pipeline or method; never as result figures or quantitative plots
+
+**Disclosure template.** When declaring AI use, a statement along these lines is the common pattern across publisher policies:
+
+> **Declaration of generative AI and AI-assisted technologies in the manuscript preparation process.** During the preparation of this work, the author(s) used [NAME OF TOOL / SERVICE] in order to [REASON]. After using this tool/service, the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the published article.
+
+The line between "just grammar" and "substantive enough to disclose" is not always obvious in practice — a tool that reflows a sentence's structure or reorganizes a paragraph has crossed further than a spell-checker, even if it never introduced a factual claim. When in doubt, disclose.
 
 ::: {.callout-note}
 ## Takeaways
 
-- AI in research is a tool, a method, or a topic — know which role it's playing
-- Generative AI can help at every stage of the research lifecycle, not just writing
-- Never publish AI output you have not personally verified
-- Match how much you delegate to your own expertise and the stakes of the output
-- Disclose substantive AI use — grammar fixes are the only exception
+- AI in research is a tool, a method, or a topic — know which role it's playing; for most researchers, most of the time, it's a tool
+- Generative AI can plausibly help at every stage of the research lifecycle, from planning through reuse — not just at the writing stage
+- Fabrication, falsification, and plagiarism are the three ways careless AI use turns into research misconduct; verify anything you can't personally stand behind
+- Use the expertise × output-risk matrix to calibrate how much you delegate: brainstorm-only in the high-risk/low-expertise quadrant, full delegation only in the low-risk/high-expertise one
+- Disclose substantive AI use under common publisher policy — grammar-only fixes are the one clear exception, and when in doubt, disclose anyway
 :::
 
 ## References
 
 1. Aalto University. (n.d.). *Best Practices for AI Use in Research Work*. [aalto.fi](https://www.aalto.fi/en/research-art/best-practices-for-ai-use-in-research-work)
-
-## Basics of Large Language Models and AI Agents
-
-Large language models (LLMs) are the engine behind today's AI tools; agents are what let them take action. This section builds intuition for both, using simple word- and letter-prediction examples.
-
-::: {.callout-note}
-## Learning Outcomes
-
-By the end of this section you will be able to:
-
-- Explain, at an intuitive level, how an LLM predicts its next word
-- Describe how "temperature" controls the randomness of generated text
-- Read a letter-pair probability heatmap as a simple example of statistical prediction
-- Distinguish the model (word generator) from the harness (what lets it take actions)
-- Describe the agent loop: think → call a tool → observe → repeat
-- Use the core vocabulary of AI agents: model, scaffolding, harness, sub-agent
-
-:::
-
-### What Does a Large Language Model Actually Do?
-
-- An LLM is, at its core, a **next-word prediction machine**: given the text so far, it predicts the most likely word to come next — then repeats, one word at a time
-- A simple version of the same idea: guessing the next **letter**. If a word starts with "q", almost everyone guesses "u" next — not a rule anyone taught you, but a statistical pattern absorbed from years of reading English
-
-![Probability of each pair of letters in typical English text — first letter across the top, second letter down the side; darker/more saturated cells are more probable pairs. Note how empty the "q" column is except at "u". (Source: Stephen Wolfram, "What Is ChatGPT Doing … and Why Does It Work?", 2023)](images/ch01/letter-pair-heatmap.png){fig-alt="26x26 heatmap grid of English letter-pair probabilities, rows and columns labeled a to z, with the q column almost empty except at row u"}
-
-- LLMs do the same thing as this heatmap, just at the scale of whole words (technically "tokens") instead of letters, learned from vast amounts of text rather than a 26×26 grid
-
-### Temperature: How Predictable Should the Output Be?
-
-- **Temperature 0** — always pick the single most likely next word: deterministic, but quickly repetitive. Prompted with "The best thing about AI is its ability to…":
-
-  > The best thing about AI is its ability to learn from experience. It's not just a matter of learning from experience, it's learning from the world around you. The AI is a very good example of this. It's a very good example of how to use AI to improve your life. It's a very good example of how to use AI to improve your life. […]
-
-- **Temperature 0.8** — sometimes pick a "non-top" word at random instead: more varied text. Building up the same prompt word by word:
-
-  > The best thing about AI is its ability to,
-  > The best thing about AI is its ability to create,
-  > The best thing about AI is its ability to create worlds,
-  > The best thing about AI is its ability to create worlds that,
-  > The best thing about AI is its ability to create worlds that are,
-  > The best thing about AI is its ability to create worlds that are both,
-  > The best thing about AI is its ability to create worlds that are both exciting,
-
-- Because the choice is random, repeating the same prompt at temperature 0.8 gives a different answer every time:
-  - "…its ability to learn. I've always liked the"
-  - "…its ability to really come into your world and just"
-  - "…its ability to examine human behavior and the way it"
-  - "…its ability to do a great job of teaching us"
-  - "…its ability to create real tasks, but you can"
-- **Trade-off**: low temperature = safe but dull and repetitive; high temperature = varied and more "creative," at the cost of predictability and coherence
-
-### From Word Generators to Agents
-
-- An **AI agent** = a language model (the "brain," generating words) + a **harness** (the "body," letting it take actions)
-- The model reasons about what to do and, when it needs to act, outputs a **tool call**: structured text that says "run this"
-- The harness executes that tool call (e.g. run code, send an email, search the web) and feeds the result back into the model's context
-- The loop repeats — think, act, observe — until the task is done
-- The harness also manages the model's limited working memory (its **context window**): chat history, files, and tool outputs all go in, and once it fills up, the harness compresses it
-- The harness can delegate parts of a task to other agent instances (**sub-agents**), sometimes in parallel
-
-![An agent is a model (the "intelligence box") plus a harness (manages execution) plus scaffolding (defines behavior); a harness can spin up sub-agents. (Source: Hugging Face, "The AI Agents Glossary", 2025)](images/ch01/agent-diagram.png){fig-alt="Diagram showing an Agent box containing Harness, Scaffold, and Model boxes, with an arrow down to a Sub-Agent box"}
-
-- For the more precise vocabulary around agents — model vs. scaffolding vs. harness vs. sub-agent — see the Hugging Face agent glossary in the references below
-
-::: {.callout-note}
-## Takeaways
-
-- An LLM is fundamentally a next-word predictor, trained on statistical patterns in huge amounts of text
-- Temperature controls the trade-off between predictable-but-repetitive and varied-but-less-coherent output
-- An agent is a model plus a harness: the model decides what to do, the harness lets it actually do it
-- The think → act → observe loop, plus context-window management, is what turns a word generator into something that can complete multi-step tasks
-:::
-
-## References
-
-1. Wolfram, S. (2023). *What Is ChatGPT Doing … and Why Does It Work?*. [writings.stephenwolfram.com](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
-2. Aalto Data Agents. (n.d.). *Chapter 0: Introduction*. [aaltodataagents.github.io](https://aaltodataagents.github.io/gen-ai-and-research-work/ch00-intro.html)
-3. Hugging Face. (2025). *The AI Agents Glossary*. [huggingface.co](https://huggingface.co/blog/agent-glossary)
+2. Glerean, E., & Silva, P. (2026). *The Research Process Aided by AI Tools* [figure], CC-BY. Adapted from rdmkit.elixir-europe.org, "The Data Lifecycle."

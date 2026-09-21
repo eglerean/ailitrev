@@ -1,0 +1,184 @@
+---
+title: "Chapter 4: A Framework for Responsible AI-Assisted Literature Review"
+---
+
+::: {.callout-warning}
+## Draft — Not Yet Reviewed
+
+This chapter is a work in progress. Content below is subject to revision.
+:::
+
+## A Framework for Responsible Delegation
+
+Chapters 2 and 3 broke the literature review into 12 steps and asked, step by step, how good today's AI tools actually are at each one. This chapter asks a different, complementary question: not *"can AI do this step,"* but *"how much of this step am I choosing to delegate — and what am I responsible for verifying as a result?"* The answer turns out to sit on a spectrum, running from full human control at one end to a fully autonomous AI literature review at the other, and the position on that spectrum matters more than which specific tool you happen to be using.
+
+::: {.callout-note}
+## Learning Outcomes
+
+By the end of this section you will be able to:
+
+- Place any AI-assisted literature review task on a five-level spectrum, from AI as consultant to AI as autonomous reviewer
+- Map the 12-step literature review process from Chapter 2 onto the six methodological decisions this spectrum actually tracks
+- Explain why moving along the spectrum means delegating increasingly *consequential* judgments, not just increasingly impressive AI
+- Read the responsible-delegation figure, including its human-control and validation-need gradients
+- Run a hands-on wording exercise and a relevance-screening exercise with a free, browser-based chatbot, and interpret disagreement between two AI models as evidence rather than noise
+
+:::
+
+## From 12 Steps to Six Methodological Decisions
+
+The 12-step process in Chapters 2 and 3 is organized around the *workflow* of a review — the order in which things happen. This chapter uses a different lens, developed specifically for teaching responsible delegation: instead of asking *which step*, it asks *which methodological decision* the researcher is letting AI make. These two ways of slicing up a review are not the same axis. Several of the 12 workflow steps collapse into the same underlying decision — running the search and updating it later are, methodologically, the same kind of judgment repeated on a schedule. A couple of steps, meanwhile, sit outside this framework entirely, because they are about accountability and communication rather than a judgment call that could be handed to AI in the first place.
+
+Since the terminology in this chapter differs from the 12-step table, the mapping below keeps the two frameworks legible against each other:
+
+| 12-step process (Chapters 2–3) | Maps to (this chapter) | Why |
+|---|---|---|
+| 1. Question & review type | **Wording** | Framing the question and its search language is the least consequential form of delegation |
+| 2. Check existing reviews | **Retrieval** | A discovery task: deciding where to look, and what already exists |
+| 3. Protocol & registration | *(outside this framework)* | A pre-registration and accountability step, not itself a delegable research judgment |
+| 4. Search strategy | **Wording** | Translating concepts into Boolean logic and controlled vocabulary is still search *language*, not a judgment about evidence |
+| 5. Run searches, grey literature, deduplication | **Retrieval** | Deciding what to find and where, then actually executing that decision |
+| 6. Title/abstract screening | **Relevance** | The paradigm case of a methodological include/exclude judgment |
+| 7. Full-text screening | **Relevance** | The same judgment, applied more deeply once the full text is available |
+| 8. Data extraction | **Extraction** | Pulling structured information out of a source that has already been included |
+| 9. Quality / risk-of-bias appraisal | **Interpretation** | Judging what a study's findings are actually worth, not just what they say |
+| 10. Synthesis & certainty | **Synthesis** | Combining evidence across studies into an overall account |
+| 11. Reporting | *(outside this framework)* | Communicating already-synthesized work — a write-up task, not a new judgment |
+| 12. Updating / living review | **Retrieval** | The same discovery decision as steps 2 and 5, repeated on a schedule |
+
+Two things are worth noting about the steps marked *outside this framework*. Protocol registration and reporting are not somehow less important than the other ten steps — Chapters 2 and 3 treat them just as seriously. They simply aren't the kind of thing this chapter's spectrum is designed to describe, because delegating them to AI doesn't change what evidence enters or leaves the review the way a wording, retrieval, relevance, extraction, interpretation, or synthesis decision does.
+
+## The Delegation Spectrum
+
+A useful way to teach responsible AI use in a review is as a spectrum of **increasing delegation of the review process to AI**. The key variable along that spectrum is not simply *how much* AI is used — it's *which methodological decisions* the researcher hands over. Five levels capture most of the practical range:
+
+| Level | Role of AI | Example in a literature review | Researcher still does |
+|---|---|---|---|
+| 1. **Consult** | Helps the researcher think | Suggest synonyms, related concepts, PICO terms, Boolean query alternatives; explain unfamiliar terminology | Search databases, select papers, read, evaluate, synthesize |
+| 2. **Discover** | Helps find literature | Semantic search, citation-network exploration, "find similar papers," query expansion, relevance ranking | Decide search strategy, inspect results, retrieve and verify papers |
+| 3. **Assist** | Helps process the literature | Screen titles/abstracts, summarize papers, extract structured information, compare studies, identify themes | Supervise each stage, verify inclusion/exclusion and extraction, interpret evidence |
+| 4. **Delegate** | Carries out multi-step review tasks | Given a question, AI formulates searches, queries multiple sources, retrieves papers, follows citations, extracts information, and iteratively searches for gaps | Define the task and its constraints, monitor the process, check corpus/provenance and important decisions |
+| 5. **Autonomous** | Produces the review | *"Research this question"* → AI independently searches, retrieves, screens, analyses, synthesizes, and produces a cited report | Mainly audits the finished product |
+
+This maps onto a pattern you may already recognize from AI-assisted coding: **chatbot → copilot → agent**. Copy-pasting a code snippet from a chat window, accepting inline suggestions in an IDE, and handing a coding agent a task to run autonomously are three genuinely different risk profiles, even though all three technically "use AI." The same three broad postures apply to a literature review:
+
+> **1. Ask AI for help** — *"Help me construct a good search query."*
+> **2. Review with AI** — *"Help me find, screen, understand, and extract information from these papers."*
+> **3. Delegate the review to AI** — *"Investigate this question and give me a literature review with sources."*
+
+The middle of the spectrum is where most serious research use actually happens, and it's worth subdividing carefully rather than treating "AI-assisted screening" as one undifferentiated activity. A single useful principle carries across all five levels:
+
+> **The further right you move, the more important transparency, validation, and human oversight become.**
+
+And one thing this framework deliberately does *not* claim: the right-hand end is not "better." It is **more autonomous, not more rigorous**. For exploratory work — getting oriented in an unfamiliar literature, checking whether a question has already been well-studied — something at Level 4–5, like a "Deep Research" style report, can be genuinely useful. But for a systematic or otherwise reproducible evidence review, the requirements around search coverage, which databases were searched, reproducibility, screening decisions, provenance, and verification become much harder to satisfy once the AI's process is opaque — which is exactly the pattern the evidence in Chapter 3 showed at Steps 4 and 5.
+
+## Visualizing the Spectrum
+
+The figure below puts the delegation spectrum and the six methodological decisions on the same picture, together with two gradients that move in opposite directions as you go from left to right: human methodological control falls, while the need for transparency, verification, and validation rises.
+
+![AI autonomy in literature reviewing: five delegation levels (Consult, Discover, Assist, Delegate, Autonomous) mapped onto six methodological decisions (Wording, Retrieval, Relevance, Extraction, Interpretation, Synthesis). As autonomy increases left to right, human methodological control decreases and the need for transparency, verification, and validation increases. More AI does not mean a better review — moving right means delegating increasingly consequential decisions.](images/ch04/ai-autonomy-spectrum.svg){fig-alt="Diagram titled 'AI Autonomy in Literature Reviewing' showing five columns — Consult, Discover, Assist, Delegate, Autonomous — each mapped to a methodological decision (Wording, Retrieval, Relevance, Extraction, Interpretation/Synthesis) with example sub-decisions listed below. Below the columns, two horizontal gradient bars show human methodological control decreasing from high to low, and the need for transparency, verification and validation increasing from low to high, moving left to right. The footer reads: More AI does not equal a better review; moving right means delegating increasingly consequential decisions."}
+
+## The Six Dimensions of Delegated Judgment
+
+Each of the six dimensions in the figure is a different *kind* of decision, with its own stakes and its own way of going wrong. The table below defines each one and gives a self-directed way to try it, regardless of which specific AI tool you have access to:
+
+| Dimension | What is being delegated | Try it yourself | Tools to try | What to check |
+|---|---|---|---|---|
+| **1. Wording** | Formulating the question and search language | Pick a topic and ask an AI: *"Suggest 10 synonyms, related concepts, narrower terms, and broader terms for this topic. Then propose a Boolean search string for Scopus/PubMed."* Compare the AI's query with one you would have written yourself | ChatGPT, Claude, Gemini; MeSH Browser; thesauri built into Scopus/PubMed | Are the synonyms actually valid? Are important concepts missing? Did the AI invent terms or misuse controlled vocabulary? |
+| **2. Retrieval** | Deciding what literature to search for, and helping locate it | Take one known relevant paper. Ask AI or a discovery tool to find five related papers, then independently search a database for the same topic. Compare the two sets | Semantic Scholar, Connected Papers, ResearchRabbit, Elicit, Google Scholar, Scopus, Web of Science | Does the AI retrieve real papers? Is coverage narrow or biased? Does it overemphasize highly cited or recent papers? |
+| **3. Relevance** | Judging which retrieved studies are worth including | Give 10 titles/abstracts and 2–3 inclusion criteria. Ask an AI to classify each as include / exclude / uncertain with a reason, then screen the same abstracts yourself and compare | ChatGPT, Claude, Elicit, Rayyan, ASReview | Where do human and AI decisions disagree? Is the criteria applied consistently? Does changing the prompt change the result? |
+| **4. Extraction** | Pulling structured information out of selected studies | Give 2–3 short papers or abstracts and ask AI to populate a table (study design, sample, intervention/exposure, outcome, main result, limitations). Verify every extracted field against the source | ChatGPT with uploaded PDFs, Claude, Elicit, NotebookLM | Is every extracted value actually supported by the paper? Did the AI infer something that was never explicitly reported? |
+| **5. Interpretation** | Making sense of patterns, differences, and contradictions | Give the AI findings from 3–5 studies that don't fully agree. Ask it to propose plausible explanations for the differences, and to separate what's supported by the papers from its own hypotheses | ChatGPT, Claude, NotebookLM | Does the AI distinguish evidence from speculation? Does it notice differences in population, design, measures, or context? |
+| **6. Synthesis** | Combining the literature into an overall account | Give the same small set of papers and ask AI to write a 250-word synthesis (not a paper-by-paper summary), then identify themes, disagreements, and research gaps | ChatGPT, Claude, NotebookLM, Elicit | Is it really synthesizing, or just summarizing sequentially? Are conclusions proportional to the evidence? Are "gaps" actually demonstrated by the search? |
+
+A good way to run through all six as one continuous exercise — alone or with a group — is to pick a single small research question and 5–10 papers, then move progressively through **wording → retrieval → relevance → extraction → interpretation → synthesis**, asking the same three questions at every stage:
+
+> **What did I delegate? What could go wrong? How can I verify it?**
+
+That reframes the exercise away from "learning a specific AI product" and toward understanding *where methodological responsibility moves from the researcher to the tool* — which is the actual point of this whole framework.
+
+## Hands-On: Try It With a Free Chatbot
+
+The exercises below are deliberately built around a fully browser-based, no-account-required chatbot — [Duck.ai](https://duck.ai) — rather than any specific paid tool. This matters for two practical reasons: not everyone has access to a paid AI subscription or to more agentic research tools, and keeping the exercise browser-only means you don't need PDF upload or any special setup — abstracts can simply be pasted into the chat.
+
+The two exercises below are chosen deliberately **far apart** on the delegation spectrum, so the contrast between them is the actual lesson: the first is AI helping you *think*, the second is AI making a *research decision*.
+
+::: {.callout-tip}
+## Exercise 1 — Wording: Build a Search Query
+
+Start from a simple research question, for example: *"Does social media use affect sleep in university students?"*
+
+**Prompt to try:**
+
+> "I want to search the scientific literature about whether social media use affects sleep in university students. Identify the main concepts, synonyms and related terms. Then propose a Boolean search query. Explain why you chose each term."
+
+**What happens next:** don't trust the query yet. Inspect the terms it proposed, remove anything inappropriate, add missing terminology, and manually run the resulting query in Google Scholar, PubMed, or Scopus.
+
+**Main lesson:** at this level, AI is acting purely as a **consultant**. You still control the actual search, and you can see exactly what the AI contributed to it.
+:::
+
+::: {.callout-tip}
+## Exercise 2 — Relevance: Screen Abstracts
+
+This is the more important exercise of the two, because it moves AI from *helping you think* to *participating in a methodological decision*.
+
+Use this research question and criteria (or substitute your own):
+
+> **Research question:** Does generative AI improve learning outcomes among university students?
+>
+> **Include:** university/higher-education students · empirical study · generative AI intervention/use · reports a learning-related outcome
+>
+> **Exclude:** school pupils · opinion/editorial papers · studies only measuring attitudes toward AI · non-generative AI
+
+Gather around 6–10 real abstracts on the topic, deliberately including a few ambiguous ones, and paste them into the chatbot along with the criteria above.
+
+**Prompt to try:**
+
+> "Using only the criteria below, classify each abstract as INCLUDE, EXCLUDE or UNCERTAIN. Give one short reason and quote the information from the abstract supporting your decision. Do not assume information that is not stated."
+
+**Workflow:**
+
+1. Screen the abstracts yourself first, before looking at the AI's answers
+2. Run the AI screening
+3. Compare the two sets of decisions
+4. For every disagreement, ask: *"Who was right — and how do we know?"*
+
+**Main lesson:** the interesting part isn't whether the AI got 7 out of 8 "correct." It's the disagreements. Once you find one — *"the AI excluded paper 6, I included it, why?"* — you've discovered that relevance is not an objective property a tool automatically detects. It depends entirely on an operationalized research question and inclusion criteria, which is exactly why Chapter 3 rated this step *Strong for specialized tools, but only with a human still screening*.
+:::
+
+::: {.callout-tip}
+## Bonus Exercise — Compare Two AI Models
+
+Duck.ai lets you switch between several free models in the same interface, which makes a small but effective experiment possible: after finishing Exercise 2, run the *exact same prompt* with a second model and compare the two sets of decisions.
+
+You might get something like this:
+
+| | Student | AI model A | AI model B |
+|---|---|---|---|
+| Paper 1 | INCLUDE | INCLUDE | INCLUDE |
+| Paper 2 | EXCLUDE | EXCLUDE | UNCERTAIN |
+| Paper 3 | INCLUDE | EXCLUDE | INCLUDE |
+| Paper 4 | UNCERTAIN | INCLUDE | EXCLUDE |
+
+This makes a point more effectively than any amount of lecturing about hallucination or stochastic sampling (see the [appendix on temperature](appendix-llms-and-agents.qmd#temperature-how-predictable-should-the-output-be) for why two runs can genuinely differ):
+
+> **If two plausible AI systems make different inclusion decisions, the methodological decision cannot simply be outsourced to "AI."**
+:::
+
+If you have roughly 30–40 minutes, a reasonable structure is: 10 minutes on the wording/search-query exercise (*AI assists*), 15 minutes on human-plus-AI abstract screening (*AI participates in a methodological decision*), and 10 minutes comparing answers or models and discussing what happened.
+
+::: {.callout-note}
+## Takeaways
+
+- The delegation spectrum — Consult, Discover, Assist, Delegate, Autonomous — describes *which decisions* you hand to AI, not just how much AI you use
+- The 12-step review process from Chapter 2 maps onto six underlying decisions (wording, retrieval, relevance, extraction, interpretation, synthesis); protocol registration and reporting sit outside this particular framework
+- Moving right on the spectrum is not "better" — it's more autonomous, and it demands more transparency, verification, and validation, not less
+- The most consequential single decision in a typical review is relevance screening: a small hands-on exercise can make visible how much of "relevance" is actually a human judgment call, not something a tool detects objectively
+- Two AI models disagreeing on the same screening task is itself useful evidence — it shows a methodological decision cannot simply be outsourced to "AI" as an undifferentiated category
+:::
+
+## References
+
+1. Glerean, E. (2026). *AI Autonomy in Literature Reviewing: Course Design Notes* (internal course material, adapted for this chapter).
+2. DuckDuckGo. (n.d.). *Duck.ai* — free, browser-based AI chat. [duck.ai](https://duck.ai)
+3. CodeRefinery. (n.d.). *Responsible Use of Generative AI in Assisted Coding* [course lesson].
