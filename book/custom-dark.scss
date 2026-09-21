@@ -71,7 +71,7 @@ $info:       $aalto-blue-bright;
 /*-- scss:rules --*/
 
 // ── Inter from Google Fonts ───────────────────────────────────────────────────
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 // ── Full-width layout ─────────────────────────────────────────────────────────
 .quarto-container,
@@ -171,11 +171,28 @@ html {
 }
 
 .sidebar-title {
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: rgba($near-white, 0.9) !important;
-  padding: 0.75rem 1rem 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: $near-white !important;
+  padding: 1rem 1rem 0.75rem;
   letter-spacing: 0.01em;
+}
+
+// The bare `a { font-weight: 400 }` reboot rule sets weight directly on the
+// anchor, which beats the inherited value from .sidebar-title above — pin it
+// explicitly here.
+.sidebar-title > a {
+  font-weight: 900;
+}
+
+.sidebar-title .sidebar-author {
+  display: inline-block;
+  margin-top: 0.375rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: rgba($near-white, 0.65);
+  letter-spacing: 0.02em;
 }
 
 // ── Sidebar navigation items — bold white text ────────────────────────────────

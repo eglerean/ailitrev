@@ -2,11 +2,11 @@ project:
   type: book
 
 book:
-  title: "Your Book Title"
-  author: "Your Name"
-  sidebar:
-    logo: aalto-logo-black.png
+  title: "Literature Reviews and AI"
+  author: "Enrico Glerean"
   date: today
+  sidebar:
+    title: "Literature Reviews and AI<br><span class=\"sidebar-author\">Enrico Glerean</span>"
   chapters:
     - index.qmd
     - ch01-chapter-one.qmd
