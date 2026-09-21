@@ -12,6 +12,8 @@ book:
     - ch01-chapter-one.qmd
     - ch02-chapter-two.qmd
     - ch03-chapter-three.qmd
+  appendices:
+    - appendix-llms-and-agents.qmd
 
 format:
   html:
