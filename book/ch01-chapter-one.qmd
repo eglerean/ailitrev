@@ -1,0 +1,73 @@
+---
+title: "Chapter One: Sample Topic"
+---
+
+::: {.callout-warning}
+## Draft — Not Yet Reviewed
+
+This is a placeholder chapter included to demonstrate the structure of this book template. Replace this content with real material before publishing.
+:::
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+
+::: {.callout-note}
+## Learning Outcomes
+
+By the end of this chapter you will be able to:
+
+- Lorem ipsum dolor sit amet consectetur adipiscing elit
+- Sed do eiusmod tempor incididunt ut labore et dolore
+- Ut enim ad minim veniam quis nostrud exercitation
+- Duis aute irure dolor in reprehenderit in voluptate
+- Excepteur sint occaecat cupidatat non proident
+:::
+
+## Sample Section One
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit
+- Sed do eiusmod tempor incididunt
+
+## Sample Section Two
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, as illustrated below.
+
+![Placeholder illustration demonstrating the image-embedding pattern used in this template](images/ch01/slide137_Graphic_12.png){fig-alt="Placeholder pictogram; replace with a real figure"}
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, sed do eiusmod tempor incididunt.
+
+::: {.callout-tip}
+## Discussion Activity
+
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris?
+3. Duis aute irure dolor in reprehenderit in voluptate velit esse?
+4. Excepteur sint occaecat cupidatat non proident, sunt in culpa?
+:::
+
+## Practical Exercises
+
+### Exercise 1 — Sample exercise title
+**Tool**: [Example Tool](https://example.com)
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Exercise 2 — Sample exercise title
+**Tool**: [Example Tool](https://example.com)
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+### Exercise 3 — Sample exercise title
+**Tool**: [Example Tool](https://example.com)
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+## References
+
+1. Author, A. (Year). *Placeholder Title One*. Publisher. [example.com](https://example.com)
+2. Author, B., & Author, C. (Year). *Placeholder Title Two*. Journal Name. [example.com](https://example.com)
+3. Author, D. (Year). *Placeholder Title Three*. [example.com](https://example.com)

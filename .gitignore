@@ -1,0 +1,9 @@
+# Local conda/mamba environment (recreate with: mamba env create -p ./env -f environment.yml)
+env/
+
+# Quarto build artifacts
+book/_book/
+book/.quarto/
+
+# OS cruft
+.DS_Store

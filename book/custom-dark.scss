@@ -1,0 +1,518 @@
+/*-- scss:defaults --*/
+
+// ── Aalto dark palette — black sidebar, near-black content ────────────────────
+$aalto-blue-bright: #7ec8ff;   // lighter blue for dark bg readability
+$aalto-red-bright:  #ff8a88;
+$near-white:        #FFFFFF;
+$bg-base:           #0f0f0f;   // near-black content bg
+$bg-surface:        #1a1a1a;
+$bg-sidebar:        #000000;   // true black sidebar (matches Aalto black)
+$bg-code:           #111111;
+$border-dark:       #2e2e2e;
+$muted-dark:        #777777;
+
+// ── Body ─────────────────────────────────────────────────────────────────────
+$body-bg:           $bg-base;
+$body-color:        $near-white;
+$link-color:        $aalto-blue-bright;
+$link-hover-color:  lighten($aalto-blue-bright, 10%);
+$link-decoration:   underline;
+
+// ── Typography — Inter (Aalto.fi website font) ────────────────────────────────
+$font-family-base:       'Inter', system-ui, sans-serif;
+$font-family-sans-serif: 'Inter', system-ui, sans-serif;
+$font-family-monospace:  'Fira Code', 'Consolas', monospace;
+$font-size-root:         16px;
+$font-size-base:         1.125rem;   // 18px
+$line-height-base:       1.45;
+
+$headings-font-family:  'Inter', system-ui, sans-serif;
+$headings-font-weight:  700;
+$headings-color:        $near-white;
+$headings-line-height:  1.2;
+
+$h1-font-size: 2.25rem;    // 36px
+$h2-font-size: 1.75rem;    // 28px
+$h3-font-size: 1.3125rem;  // 21px
+$h4-font-size: 1.125rem;   // 18px
+
+// ── Structural backgrounds ────────────────────────────────────────────────────
+$navbar-bg:  $bg-sidebar;
+$navbar-fg:  $near-white;
+$navbar-hl:  $aalto-blue-bright;
+
+$sidebar-bg:  $bg-sidebar;
+$sidebar-fg:  $near-white;
+$sidebar-hl:  $aalto-blue-bright;
+
+$toc-color:           $muted-dark;
+$toc-active-border:   $aalto-blue-bright;
+$toc-font-size:       0.85rem;
+
+// ── Code ─────────────────────────────────────────────────────────────────────
+$code-bg:         $bg-code;
+$code-color:      #c8c8c8;
+$monospace-color: $code-color;
+$monospace-bg:    $bg-code;
+
+// ── Borders ───────────────────────────────────────────────────────────────────
+$border-color:  $border-dark;
+$border-radius: 0.25rem;
+
+// ── Bootstrap semantic ────────────────────────────────────────────────────────
+$primary:    $aalto-blue-bright;
+$secondary:  $muted-dark;
+$success:    #4ade80;
+$warning:    $aalto-red-bright;
+$danger:     $aalto-red-bright;
+$info:       $aalto-blue-bright;
+
+
+/*-- scss:rules --*/
+
+// ── Inter from Google Fonts ───────────────────────────────────────────────────
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+// ── Full-width layout ─────────────────────────────────────────────────────────
+.quarto-container,
+#quarto-content,
+.page-columns,
+.page-layout-article {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+// ── Content area near-black; sidebar true black ───────────────────────────────
+body,
+.quarto-container,
+#quarto-content,
+.page-columns {
+  background-color: $bg-base;
+}
+
+// ── Sidebar — true black background ──────────────────────────────────────────
+#quarto-sidebar,
+.sidebar,
+.sidebar-navigation,
+.sidebar-menu-container,
+.quarto-sidebar-toggle-contents,
+.quarto-sidebar-collapse-item {
+  background-color: $bg-sidebar !important;
+  color: $near-white;
+}
+
+// Extend floating sidebar to screen left edge (removes white gap)
+body.floating .sidebar.sidebar-navigation {
+  grid-column: screen-start / body-start !important;
+}
+
+html {
+  background-color: $bg-sidebar;
+}
+
+// Logo in sidebar: invert to show white
+.sidebar-logo-link img,
+.sidebar-header img {
+  filter: invert(1) brightness(2);
+}
+
+.sidebar { border-right: none; }
+
+// ── Navbar — true black, blue bottom border ───────────────────────────────────
+.navbar {
+  background-color: $bg-sidebar !important;
+  border-bottom: 3px solid $aalto-blue-bright;
+  box-shadow: none;
+  min-height: 3.5rem;
+
+  // Logo inversion already set globally; also for navbar
+  .navbar-brand img {
+    filter: invert(1) brightness(2);
+  }
+
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1rem;
+    color: $near-white !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgba($near-white, 0.8);
+    transition: color 0.15s;
+
+    &:hover,
+    &.active {
+      color: $aalto-blue-bright !important;
+    }
+  }
+}
+
+// ── Secondary nav ─────────────────────────────────────────────────────────────
+.quarto-secondary-nav {
+  background-color: $bg-sidebar !important;
+  border-bottom: 2px solid $aalto-blue-bright;
+  color: $near-white;
+
+  .quarto-secondary-nav-title {
+    color: $near-white;
+  }
+
+  button {
+    color: $near-white !important;
+  }
+}
+
+// ── Sidebar header ────────────────────────────────────────────────────────────
+.sidebar-header {
+  background-color: $bg-sidebar !important;
+  border-bottom: 1px solid rgba($near-white, 0.1);
+}
+
+.sidebar-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgba($near-white, 0.9) !important;
+  padding: 0.75rem 1rem 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+// ── Sidebar navigation items — bold white text ────────────────────────────────
+.sidebar-navigation {
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+}
+
+.sidebar-item .sidebar-item-text,
+.sidebar-item a.sidebar-link,
+.sidebar-item a.sidebar-item-text {
+  color: rgba($near-white, 0.85) !important;
+  font-weight: 700 !important;
+  font-size: 0.9375rem;  // 15px
+  padding: 0.3rem 1rem;
+  display: block;
+  text-decoration: none;
+  transition: color 0.15s, background-color 0.15s;
+  border-radius: 0;
+
+  &:hover {
+    color: $near-white !important;
+    background-color: rgba($near-white, 0.08) !important;
+  }
+}
+
+.sidebar-item-container .active > .sidebar-item-text,
+.sidebar-item-container .active .sidebar-item-text,
+.sidebar-item-container .active > a.sidebar-link,
+.sidebar-item-container .active a.sidebar-link {
+  color: $aalto-blue-bright !important;
+  background-color: rgba($aalto-blue-bright, 0.12) !important;
+  font-weight: 700 !important;
+}
+
+.sidebar-section {
+  color: rgba($near-white, 0.45);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 1rem 1rem 0.25rem;
+}
+
+// ── TOC (right margin — in-page headings) ────────────────────────────────────
+#quarto-margin-sidebar,
+.margin-sidebar {
+  background-color: $bg-base !important;
+}
+
+#TOC {
+  border-left: 1px solid $border-dark;
+  padding: 1rem 0 1rem 1rem;
+  font-size: 0.825rem;
+
+  > ul { padding-left: 0; }
+  ul   { padding-left: 0.85rem; }
+
+  a {
+    color: rgba($near-white, 0.45);
+    text-decoration: none;
+    display: block;
+    padding: 0.18rem 0.3rem;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    transition: color 0.15s, border-color 0.15s;
+    line-height: 1.5;
+    font-weight: 400;
+
+    &:hover {
+      color: $near-white;
+      border-left-color: $border-dark;
+    }
+
+    &.active {
+      color: $aalto-blue-bright;
+      border-left-color: $aalto-blue-bright;
+      font-weight: 700;
+    }
+  }
+}
+
+// ── Main content typography ───────────────────────────────────────────────────
+.nav-footer,
+.nav-footer-contents,
+.page-navigation {
+  background-color: $bg-base !important;
+}
+
+.quarto-title h1,
+h1.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+  color: $near-white;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background: $aalto-blue-bright;
+    margin-top: 0.75rem;
+    border-radius: 2px;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-top: 2.4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid $border-dark;
+  color: $near-white;
+}
+
+h3 {
+  font-size: 1.3125rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: rgba($near-white, 0.9);
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: $aalto-blue-bright;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  letter-spacing: 0.015rem;
+  margin-bottom: 1rem;
+  color: rgba($near-white, 0.88);
+}
+
+li {
+  font-size: $font-size-base;
+  line-height: 1.8;
+  letter-spacing: 0.015rem;
+  margin-bottom: 0.25rem;
+  color: rgba($near-white, 0.85);
+}
+
+// ── Links ─────────────────────────────────────────────────────────────────────
+a {
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.06em;
+  transition: color 0.15s;
+
+  &:hover { text-decoration-thickness: 0.12em; }
+}
+
+// ── Code ─────────────────────────────────────────────────────────────────────
+pre.sourceCode,
+pre {
+  background: $bg-code !important;
+  border: 1px solid $border-dark;
+  border-radius: 0.35rem;
+  padding: 1.1rem 1.4rem;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: $code-color;
+}
+
+code {
+  background: $bg-code;
+  color: lighten($aalto-blue-bright, 10%);
+  padding: 0.12em 0.38em;
+  border-radius: 0.2rem;
+  font-size: 0.86em;
+  border: 1px solid $border-dark;
+}
+
+pre code {
+  border: none;
+  padding: 0;
+  background: transparent;
+  color: $code-color;
+}
+
+// ── Callouts ─────────────────────────────────────────────────────────────────
+.callout {
+  border-radius: 0.35rem;
+  border-left-width: 4px;
+  border-left-style: solid;
+  margin: 1.1rem 0;
+  padding: 0;
+
+  .callout-header {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 0.6rem 1rem 0.35rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .callout-body {
+    font-size: 0.9375rem;
+    padding: 0 1rem 0.7rem;
+    line-height: 1.65;
+    color: rgba($near-white, 0.85);
+  }
+}
+
+.callout.callout-style-default.callout-note {
+  border-left-color: $aalto-blue-bright !important;
+  background-color: rgba($aalto-blue-bright, 0.08) !important;
+  .callout-header { color: $aalto-blue-bright; }
+}
+
+.callout.callout-style-default.callout-tip {
+  border-left-color: #4ade80 !important;
+  background-color: rgba(#4ade80, 0.07) !important;
+  .callout-header { color: #4ade80; }
+}
+
+.callout.callout-style-default.callout-warning {
+  border-left-color: $aalto-red-bright !important;
+  background-color: rgba($aalto-red-bright, 0.1) !important;
+  .callout-header { color: $aalto-red-bright; }
+}
+
+.callout.callout-style-default.callout-important {
+  border-left-color: $aalto-red-bright !important;
+  background-color: rgba($aalto-red-bright, 0.08) !important;
+  .callout-header { color: $aalto-red-bright; }
+}
+
+.callout.callout-style-default.callout-caution {
+  border-left-color: #fbbf24 !important;
+  background-color: rgba(#fbbf24, 0.07) !important;
+  .callout-header { color: #fbbf24; }
+}
+
+// ── Tables ────────────────────────────────────────────────────────────────────
+.table {
+  font-size: 0.9375rem;
+  color: $near-white;
+  border-color: $border-dark;
+
+  thead th {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba($near-white, 0.45);
+    border-bottom: 1.5px solid $border-dark;
+    background-color: $bg-surface;
+    padding: 0.6rem 0.9rem;
+  }
+
+  td {
+    padding: 0.55rem 0.9rem;
+    border-color: $border-dark;
+    vertical-align: top;
+    line-height: 1.6;
+  }
+
+  tbody tr:hover {
+    background-color: rgba($aalto-blue-bright, 0.05);
+  }
+}
+
+// ── Prev / Next navigation ────────────────────────────────────────────────────
+.page-navigation {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid $border-dark;
+}
+
+.page-navigation a.nav-page {
+  border: 1px solid $border-dark;
+  border-radius: 0.35rem;
+  padding: 0.85rem 1.2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: $near-white;
+  transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+  background-color: $bg-surface;
+
+  &:hover {
+    border-color: $aalto-blue-bright;
+    background-color: rgba($aalto-blue-bright, 0.08);
+    color: $aalto-blue-bright;
+  }
+}
+
+// ── Footer ───────────────────────────────────────────────────────────────────
+.nav-footer {
+  background-color: $bg-base !important;
+  border-top: 1px solid $border-dark;
+  font-size: 0.82rem;
+  color: rgba($near-white, 0.4);
+  padding: 1rem 0;
+}
+
+// ── Toolbar icons (dark mode toggle, GitHub) — navbar and sidebar ─────────────
+.quarto-navbar-tools,
+.quarto-navbar-tools a,
+.quarto-navbar-tools .quarto-navigation-tool,
+.sidebar-tools-main a,
+.sidebar-tools-main .quarto-navigation-tool {
+  color: rgba($near-white, 0.6) !important;
+  font-size: 1rem;
+  transition: color 0.15s;
+
+  &:hover { color: $aalto-blue-bright !important; }
+}
+
+// ── Chapter numbers in sidebar ────────────────────────────────────────────────
+#quarto-sidebar .chapter-number {
+  color: rgba($near-white, 0.4);
+}
+
+// ── Scrollbar ─────────────────────────────────────────────────────────────────
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: $bg-sidebar; }
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 3px;
+  &:hover { background: #555555; }
+}

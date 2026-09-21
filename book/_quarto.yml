@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "Your Book Title"
+  author: "Your Name"
+  sidebar:
+    logo: aalto-logo-black.png
+  date: today
+  chapters:
+    - index.qmd
+    - ch01-chapter-one.qmd
+    - ch02-chapter-two.qmd
+
+format:
+  html:
+    theme:
+      light: [cosmo, custom-light.scss]
+      dark: [darkly, custom-dark.scss]
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    smooth-scroll: true

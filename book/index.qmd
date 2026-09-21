@@ -1,0 +1,62 @@
+---
+title: "Preface"
+---
+
+::: {.callout-warning}
+## Template Preface
+
+This is a placeholder preface included to demonstrate the structure of this book template. Replace this content with your own introduction before publishing.
+:::
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+::: {.callout-note}
+## Learning Outcomes
+
+By the end of this book you will be able to:
+
+- Lorem ipsum dolor sit amet consectetur adipiscing elit
+- Sed do eiusmod tempor incididunt ut labore et dolore
+- Ut enim ad minim veniam quis nostrud exercitation
+- Duis aute irure dolor in reprehenderit in voluptate
+:::
+
+## What This Book Covers
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+- Lorem ipsum dolor sit amet
+- Consectetur adipiscing elit
+- Sed do eiusmod tempor incididunt
+
+## How to Use This Book
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+- Duis aute irure dolor in reprehenderit
+- In voluptate velit esse cillum dolore
+- Excepteur sint occaecat cupidatat non proident
+
+::: {.callout-tip}
+## Discussion Activity
+
+1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris?
+:::
+
+## Practical Exercises
+
+### Exercise 1 — Sample exercise title
+**Tool**: [Example Tool](https://example.com)
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Exercise 2 — Sample exercise title
+**Tool**: [Example Tool](https://example.com)
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+## References
+
+1. Author, A. (Year). *Placeholder Title One*. Publisher. [example.com](https://example.com)
+2. Author, B., & Author, C. (Year). *Placeholder Title Two*. Journal Name. [example.com](https://example.com)

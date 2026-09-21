@@ -1,0 +1,67 @@
+name: Render and Publish Quarto Book
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Minimal permissions at workflow level; deploy job adds what it needs
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  # ── Job 1: render using the official Quarto Docker image ──────────────────
+  render:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/quarto-dev/quarto:latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Render Quarto book
+        run: quarto render book/
+
+      - name: Upload rendered HTML
+        uses: actions/upload-artifact@v4
+        with:
+          name: book-html
+          path: book/_book/
+          retention-days: 1
+
+  # ── Job 2: deploy to GitHub Pages (push to main only) ─────────────────────
+  deploy:
+    needs: render
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Download rendered HTML
+        uses: actions/download-artifact@v4
+        with:
+          name: book-html
+          path: _site/
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
