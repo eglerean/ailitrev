@@ -1,73 +1,168 @@
 ---
-title: "Chapter One: Sample Topic"
+title: "Chapter 1: Foundations of AI in Research"
 ---
 
 ::: {.callout-warning}
 ## Draft — Not Yet Reviewed
 
-This is a placeholder chapter included to demonstrate the structure of this book template. Replace this content with real material before publishing.
+This chapter is a work in progress. More sections are still to come; content below is subject to revision.
 :::
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+## Basics of AI
+
+A fast, bullet-point primer on what AI is, where generative AI fits into the research workflow, and how to use it responsibly — condensed from Aalto's institutional guidance on AI in research.
 
 ::: {.callout-note}
 ## Learning Outcomes
 
-By the end of this chapter you will be able to:
+By the end of this section you will be able to:
 
-- Lorem ipsum dolor sit amet consectetur adipiscing elit
-- Sed do eiusmod tempor incididunt ut labore et dolore
-- Ut enim ad minim veniam quis nostrud exercitation
-- Duis aute irure dolor in reprehenderit in voluptate
-- Excepteur sint occaecat cupidatat non proident
+- Distinguish AI as a topic, a method, and a tool in research
+- Identify where generative AI can help across the research lifecycle
+- Recognize the misconduct risks of fabrication, falsification, and plagiarism
+- Judge how much you can safely delegate to AI, based on your expertise and the stakes of the output
+- Know when AI use must be disclosed — and how to write that disclosure
 :::
 
-## Sample Section One
+### What Is AI?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Three roles AI can play in your research:
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+- **AI as a Topic** — studying AI itself (e.g. its ethics, impact, mechanisms)
+- **AI as a Method** — using ML/AI as your analysis approach
+- **AI as a Tool** — using AI applications to assist non-AI tasks
 
-- Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit
-- Sed do eiusmod tempor incididunt
+This section focuses on the third: **generative AI as a tool**.
 
-## Sample Section Two
+### Generative AI Across the Research Lifecycle
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, as illustrated below.
+Generative AI can assist at every stage:
 
-![Placeholder illustration demonstrating the image-embedding pattern used in this template](images/ch01/slide137_Graphic_12.png){fig-alt="Placeholder pictogram; replace with a real figure"}
+- **Planning** — literature search, grant drafting, brainstorming
+- **Data collection** — survey design, synthetic data, simulations
+- **Pre-processing** — formatting, quality checks, cleaning
+- **Analysis** — code generation, annotation
+- **Preservation** — documentation, metadata
+- **Sharing** — manuscript drafting, press releases
+- **Reuse** — code documentation, dataset descriptions
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, sed do eiusmod tempor incididunt.
+### Avoiding Research Misconduct
 
-::: {.callout-tip}
-## Discussion Activity
+Three risks to watch for:
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris?
-3. Duis aute irure dolor in reprehenderit in voluptate velit esse?
-4. Excepteur sint occaecat cupidatat non proident, sunt in culpa?
+- **Fabrication** — AI generates plausible but nonexistent text, references, or statistics
+- **Falsification** — AI predicts a statistically likely output without genuine reasoning
+- **Plagiarism** — AI synthesizes text without proper attribution
+
+> If you cannot verify GenAI output, don't use it beyond brainstorming.
+
+### Evaluating Risk: Expertise × Output-Risk
+
+Weigh two factors before delegating a task to AI: your **expertise** on it, and the **importance of the output** (e.g. peer-reviewed claim vs. low-stakes draft).
+
+- **High expertise, high risk** — OK to use AI, but only for simple sub-tasks you can fully review
+- **Low expertise, high risk** — use AI only for brainstorming; go back to original sources
+- **High expertise, low risk** — safe to delegate most of the work to AI
+- **Low expertise, low risk** — usable, but accept a non-zero chance of error
+
+### Disclosing AI Use
+
+- **No declaration needed** — grammar and typo fixes only
+- **Declaration required** — text synthesis, code generation, figure creation, analysis suggestions, section drafting
+- **AI-generated images** — acceptable only to illustrate methodology; never to illustrate results
+- **Disclosure template**:
+
+  > During preparation, author(s) used [TOOL] for [REASON]. Content was reviewed; author(s) take full responsibility.
+
+::: {.callout-note}
+## Takeaways
+
+- AI in research is a tool, a method, or a topic — know which role it's playing
+- Generative AI can help at every stage of the research lifecycle, not just writing
+- Never publish AI output you have not personally verified
+- Match how much you delegate to your own expertise and the stakes of the output
+- Disclose substantive AI use — grammar fixes are the only exception
 :::
-
-## Practical Exercises
-
-### Exercise 1 — Sample exercise title
-**Tool**: [Example Tool](https://example.com)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-### Exercise 2 — Sample exercise title
-**Tool**: [Example Tool](https://example.com)
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-### Exercise 3 — Sample exercise title
-**Tool**: [Example Tool](https://example.com)
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
 ## References
 
-1. Author, A. (Year). *Placeholder Title One*. Publisher. [example.com](https://example.com)
-2. Author, B., & Author, C. (Year). *Placeholder Title Two*. Journal Name. [example.com](https://example.com)
-3. Author, D. (Year). *Placeholder Title Three*. [example.com](https://example.com)
+1. Aalto University. (n.d.). *Best Practices for AI Use in Research Work*. [aalto.fi](https://www.aalto.fi/en/research-art/best-practices-for-ai-use-in-research-work)
+
+## Basics of Large Language Models and AI Agents
+
+Large language models (LLMs) are the engine behind today's AI tools; agents are what let them take action. This section builds intuition for both, using simple word- and letter-prediction examples.
+
+::: {.callout-note}
+## Learning Outcomes
+
+By the end of this section you will be able to:
+
+- Explain, at an intuitive level, how an LLM predicts its next word
+- Describe how "temperature" controls the randomness of generated text
+- Read a letter-pair probability heatmap as a simple example of statistical prediction
+- Distinguish the model (word generator) from the harness (what lets it take actions)
+- Describe the agent loop: think → call a tool → observe → repeat
+- Use the core vocabulary of AI agents: model, scaffolding, harness, sub-agent
+
+:::
+
+### What Does a Large Language Model Actually Do?
+
+- An LLM is, at its core, a **next-word prediction machine**: given the text so far, it predicts the most likely word to come next — then repeats, one word at a time
+- A simple version of the same idea: guessing the next **letter**. If a word starts with "q", almost everyone guesses "u" next — not a rule anyone taught you, but a statistical pattern absorbed from years of reading English
+
+![Probability of each pair of letters in typical English text — first letter across the top, second letter down the side; darker/more saturated cells are more probable pairs. Note how empty the "q" column is except at "u". (Source: Stephen Wolfram, "What Is ChatGPT Doing … and Why Does It Work?", 2023)](images/ch01/letter-pair-heatmap.png){fig-alt="26x26 heatmap grid of English letter-pair probabilities, rows and columns labeled a to z, with the q column almost empty except at row u"}
+
+- LLMs do the same thing as this heatmap, just at the scale of whole words (technically "tokens") instead of letters, learned from vast amounts of text rather than a 26×26 grid
+
+### Temperature: How Predictable Should the Output Be?
+
+- **Temperature 0** — always pick the single most likely next word: deterministic, but quickly repetitive. Prompted with "The best thing about AI is its ability to…":
+
+  > The best thing about AI is its ability to learn from experience. It's not just a matter of learning from experience, it's learning from the world around you. The AI is a very good example of this. It's a very good example of how to use AI to improve your life. It's a very good example of how to use AI to improve your life. […]
+
+- **Temperature 0.8** — sometimes pick a "non-top" word at random instead: more varied text. Building up the same prompt word by word:
+
+  > The best thing about AI is its ability to,
+  > The best thing about AI is its ability to create,
+  > The best thing about AI is its ability to create worlds,
+  > The best thing about AI is its ability to create worlds that,
+  > The best thing about AI is its ability to create worlds that are,
+  > The best thing about AI is its ability to create worlds that are both,
+  > The best thing about AI is its ability to create worlds that are both exciting,
+
+- Because the choice is random, repeating the same prompt at temperature 0.8 gives a different answer every time:
+  - "…its ability to learn. I've always liked the"
+  - "…its ability to really come into your world and just"
+  - "…its ability to examine human behavior and the way it"
+  - "…its ability to do a great job of teaching us"
+  - "…its ability to create real tasks, but you can"
+- **Trade-off**: low temperature = safe but dull and repetitive; high temperature = varied and more "creative," at the cost of predictability and coherence
+
+### From Word Generators to Agents
+
+- An **AI agent** = a language model (the "brain," generating words) + a **harness** (the "body," letting it take actions)
+- The model reasons about what to do and, when it needs to act, outputs a **tool call**: structured text that says "run this"
+- The harness executes that tool call (e.g. run code, send an email, search the web) and feeds the result back into the model's context
+- The loop repeats — think, act, observe — until the task is done
+- The harness also manages the model's limited working memory (its **context window**): chat history, files, and tool outputs all go in, and once it fills up, the harness compresses it
+- The harness can delegate parts of a task to other agent instances (**sub-agents**), sometimes in parallel
+
+![An agent is a model (the "intelligence box") plus a harness (manages execution) plus scaffolding (defines behavior); a harness can spin up sub-agents. (Source: Hugging Face, "The AI Agents Glossary", 2025)](images/ch01/agent-diagram.png){fig-alt="Diagram showing an Agent box containing Harness, Scaffold, and Model boxes, with an arrow down to a Sub-Agent box"}
+
+- For the more precise vocabulary around agents — model vs. scaffolding vs. harness vs. sub-agent — see the Hugging Face agent glossary in the references below
+
+::: {.callout-note}
+## Takeaways
+
+- An LLM is fundamentally a next-word predictor, trained on statistical patterns in huge amounts of text
+- Temperature controls the trade-off between predictable-but-repetitive and varied-but-less-coherent output
+- An agent is a model plus a harness: the model decides what to do, the harness lets it actually do it
+- The think → act → observe loop, plus context-window management, is what turns a word generator into something that can complete multi-step tasks
+:::
+
+## References
+
+1. Wolfram, S. (2023). *What Is ChatGPT Doing … and Why Does It Work?*. [writings.stephenwolfram.com](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
+2. Aalto Data Agents. (n.d.). *Chapter 0: Introduction*. [aaltodataagents.github.io](https://aaltodataagents.github.io/gen-ai-and-research-work/ch00-intro.html)
+3. Hugging Face. (2025). *The AI Agents Glossary*. [huggingface.co](https://huggingface.co/blog/agent-glossary)
