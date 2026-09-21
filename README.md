@@ -1,5 +1,7 @@
 # Quarto Book Template
 
+to be edited 
+
 A minimal two-chapter [Quarto](https://quarto.org) book template with an
 Aalto-branded light/dark theme (colors, typography, sidebar logo), ready to
 be filled with new content. It ships pre-populated with lorem-ipsum
