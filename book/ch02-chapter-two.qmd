@@ -1,73 +1,236 @@
 ---
-title: "Chapter Two: Another Sample Topic"
+title: "Chapter 2: Literature Review Foundations"
 ---
 
 ::: {.callout-warning}
 ## Draft — Not Yet Reviewed
 
-This is a placeholder chapter included to demonstrate the structure of this book template. Replace this content with real material before publishing.
+This chapter is a work in progress. Content below is subject to revision.
 :::
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+## Basics of Literature Review
+
+A literature review pulls together and evaluates existing research on a topic. This section covers what a literature review is, the main types, and the 12-step process for doing one systematically.
 
 ::: {.callout-note}
 ## Learning Outcomes
 
-By the end of this chapter you will be able to:
+By the end of this section you will be able to:
 
-- Lorem ipsum dolor sit amet consectetur adipiscing elit
-- Sed do eiusmod tempor incididunt ut labore et dolore
-- Ut enim ad minim veniam quis nostrud exercitation
-- Duis aute irure dolor in reprehenderit in voluptate
-- Excepteur sint occaecat cupidatat non proident
+- Define what a literature review is and why researchers do one
+- Distinguish systematic, narrative, and meta-analytic reviews
+- Explain recall and precision, and why they trade off against each other
+- List the 12 steps of a systematic literature review, in order, and describe what each one involves
+- Name the classic methodological reference behind each step
+- Explain the difference between *assistive* and *agentic* AI support at each step of the process
+
 :::
 
-## Sample Section One
+## What Is a Literature Review?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+A literature review is not just a summary of what other people have written — it is a systematic identification, evaluation, and synthesis of existing research on a topic. Its purpose is to map what is already known, surface the gaps in current knowledge, and justify why new research is needed. Every type of review shares the same core ingredients — searching, evaluating, synthesizing, and analyzing the literature — but they differ sharply in how rigorously and comprehensively each of those steps is carried out.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Broadly, reviews fall into three families:
 
-- Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit
-- Sed do eiusmod tempor incididunt
+- **Systematic review** — takes a systematic approach to every stage of the review:
+  - Answers a well-defined research question
+  - The search is carried out systematically and reported accurately
+  - Inclusion and exclusion criteria are defined *before* screening starts
+  - The methodological quality of the selected studies and their risk of bias are carefully assessed
+  - Related variants include the umbrella review, the integrative review, and the systematized review
+- **Narrative review** (sometimes just called a "literature review") — the methodologically lightest form:
+  - Describes previous research on a topic, often addressing a broad question
+  - The literature search is not carried out in a fully systematic way
+  - Selective collection of studies can lead to divergent descriptions of the same topic depending on who wrote the review
+  - Sub-types include the critical review, the scoping review, the mapping review, and the overview — some of which borrow features from systematic reviews
+- **Meta-analysis / meta-synthesis** — combines results *across* studies rather than just describing them:
+  - A *quantitative* meta-analysis statistically combines and generalizes numerical results from multiple studies
+  - A *qualitative* meta-synthesis (or meta-summary) classifies and summarizes findings thematically instead of numerically
 
-## Sample Section Two
+Knowing which family your review belongs to early on shapes everything downstream — how rigorously you search, how you screen, and how you report.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, as illustrated below.
+## Recall and Precision
 
-![Placeholder illustration demonstrating a sized image embed](images/ch02/slide137_Graphic_8.png){fig-alt="Placeholder pictogram; replace with a real figure" width=120}
+A systematic search aims to find *all* relevant documents on a topic, without letting the result set grow so large that it becomes impossible to work through. Two concepts from information retrieval describe this balancing act:
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, sed do eiusmod tempor incididunt.
+- **Recall (sensitivity)** — the ratio of relevant documents actually found to *all* relevant documents that exist in the database; in other words, the proportion of everything relevant that your search successfully retrieved
+- **Precision (specificity)** — the ratio of relevant documents to *all* documents your search returned; in other words, what percentage of your result set was actually useful
 
-::: {.callout-tip}
-## Discussion Activity
+Recall and precision have an inverse relationship. Widening a search to increase recall (catch more of the relevant literature) usually pulls in more irrelevant records too, which lowers precision. Narrowing a search to raise precision (cut the noise) risks losing genuinely relevant studies, which lowers recall. Systematic searching is a continual balancing act between the two — good subject knowledge, careful search planning, and persistent testing of search phrases are what get you the best result on both fronts at once.
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris?
-3. Duis aute irure dolor in reprehenderit in voluptate velit esse?
-4. Excepteur sint occaecat cupidatat non proident, sunt in culpa?
+## The 12 Steps of a Literature Review
+
+A systematic review moves through 12 steps, from framing the initial question to keeping the review current after publication. Each step below is anchored to a classic methodological reference, a practical example drawn from a single running case — a systematic review of mindfulness interventions for doctoral student well-being — and a note on where AI tools can plausibly help today.
+
+Two terms recur throughout: **assistive** use means a single AI turn with a human operating each step by hand (e.g. asking a model to suggest search terms); **agentic** use means the AI plans and executes multi-step work itself — using tools such as search APIs, code execution, or file handling — while a human checks the result at defined checkpoints.
+
+::: {.callout-important}
+## Not All Fields Review This Way
+
+The 12-step framework below — PICO/SPIDER questions, PROSPERO registration, PRISMA reporting — is the dominant standard in evidence-based fields like health sciences and medicine, where review methodology is tightly formalized. Many other disciplines follow it closely too, but plenty don't: fields such as architecture, design, or the humanities often work from looser, more interpretive review traditions, where some of these steps have no direct equivalent, or get combined, reordered, or skipped. Treat what follows as a strong default to adapt to your own field's conventions, not a rule to apply rigidly everywhere.
 :::
 
-## Practical Exercises
+### 1. Question & Review Type
 
-### Exercise 1 — Sample exercise title
-**Tool**: [Example Tool](https://example.com)
+Every review starts by turning a general interest into an answerable question, using a structured framework, and then picking the review type that best fits that question. Skipping this step — or leaving the question too vague — tends to produce an unfocused search strategy later on.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+- **Classic reference**: Richardson et al. (1995), *ACP Journal Club*, 123:A12 — the PICO framework; Cooke, Smith & Booth (2012), *Qualitative Health Research*, 22:1435 — the SPIDER framework; Grant & Booth (2009), *Health Information & Libraries Journal*, 26:91 — review typology
+- **Worked example**: P = doctoral students, I = mindfulness programmes, C = waitlist/usual support, O = perceived stress → a systematic review is chosen as the review type
+- **AI's role**: *Assistive* — generate alternative framings of the question, flag vague terms, estimate roughly how much literature exists. *Agentic* — run exploratory searches and report back on feasibility. The human still decides the final scope
 
-### Exercise 2 — Sample exercise title
-**Tool**: [Example Tool](https://example.com)
+### 2. Check Existing Reviews
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Before investing months in a new review, check whether one already exists or is underway. This avoids duplicating effort and gives you the evidence you need to justify why a new review is worth doing.
 
-### Exercise 3 — Sample exercise title
-**Tool**: [Example Tool](https://example.com)
+- **Classic reference**: Booth et al. (2012), *Systematic Reviews*, 1:2 — on PROSPERO, the international register of systematic reviews
+- **Worked example**: Registries are searched for ongoing reviews on mindfulness in higher education; one is found, but it covers undergraduates only — leaving room for a doctoral-student-focused review
+- **AI's role**: *Agentic* — query registries and review databases automatically, then summarize how much they overlap with the proposed scope. This is a low-risk, high-value use of automation
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+### 3. Protocol & Registration
+
+A protocol pre-specifies exactly how the review will be conducted — eligibility criteria, search methods, analysis plan — and is registered publicly *before* screening begins. This is what allows others to check the review was conducted as planned, rather than adapted after the fact to fit whatever was found.
+
+- **Classic reference**: Moher et al. (2015), *Systematic Reviews*, 4:1 — the PRISMA-P reporting guideline for protocols
+- **Worked example**: A protocol specifying the eligibility criteria and analysis plan is written up and registered, creating a timestamped public record
+- **AI's role**: *Assistive* — draft protocol sections from the outputs of steps 1–2, checked against a reporting checklist. The human finalizes the criteria and submits the registration — the protocol is the accountability anchor for the whole review, so it should not be delegated wholesale
+
+### 4. Search Strategy
+
+The research question is translated into the actual vocabulary a database understands: controlled vocabulary terms (e.g. MeSH headings) plus free-text keywords, combined with Boolean logic, and adapted to each database's specific syntax.
+
+- **Classic reference**: Lefebvre et al., *Cochrane Handbook*, ch. 4; McGowan et al. (2016), *Journal of Clinical Epidemiology*, 75:40 — the PRESS peer-review checklist for search strategies
+- **Worked example**: `("mindfulness" OR "meditation") AND ("doctoral" OR "PhD student") AND (stress OR well-being)`, adapted line by line to each database's syntax
+- **AI's role**: *Assistive* — suggest synonyms and controlled-vocabulary terms, translate a search string's syntax across databases. *Agentic* — test the strategy's recall against a seed set of known relevant papers and iterate automatically. Either way, a human peer-reviews the final strategy before it is run
+
+### 5. Run Searches, Grey Literature, Deduplication
+
+With the strategy finalized, the searches are executed across every chosen database, supplemented with grey literature (theses, reports, conference proceedings) and citation chasing, and the combined results are deduplicated before screening starts.
+
+- **Classic reference**: Paez (2017), *Journal of Evidence-Based Medicine*, 10:233 — on grey literature; Wohlin (2014), *EASE* proceedings — on snowballing/citation chasing; Bramer et al. (2016), *Journal of the Medical Library Association*, 104:240 — on deduplication methods
+- **Worked example**: Four databases plus theses repositories are searched, yielding 2,140 records, which drop to 1,380 after deduplication
+- **AI's role**: *Agentic* — execute searches via APIs, chase citations forward and backward, deduplicate records, and log every query verbatim with a timestamp. Semantic or conversational search tools are supplementary only here, since their results are not reproducible in the way a systematic review requires
+
+### 6. Title/Abstract Screening
+
+Every record is checked against the eligibility criteria based on its title and abstract alone, ideally by two reviewers working independently, with disagreements resolved through discussion.
+
+- **Classic reference**: Waffenschmidt et al. (2019), *BMC Medical Research Methodology*, 19:132 — single vs. double screening; van de Schoot et al. (2021), *Nature Machine Intelligence*, 3:125 — active-learning approaches to screening
+- **Worked example**: 1,380 records are screened down to 96, with any conflicts between reviewers resolved by discussion
+- **AI's role**: *Assistive* — active-learning tools prioritize the records most likely to be relevant, or a model can act as a second screener alongside a human. A human still screens, and a pre-specified stopping rule decides when to stop reviewing records. This is the most mature and best-validated automation step in the whole process
+
+### 7. Full-Text Screening
+
+Records that pass title/abstract screening are then assessed in full text against the same eligibility criteria — and, critically, a reason is recorded for every single exclusion, not just the inclusions.
+
+- **Classic reference**: *Cochrane Handbook*, ch. 4; Page et al. (2021), *BMJ*, 372:n71 — on reporting exclusion reasons
+- **Worked example**: 96 full texts are narrowed down to 14 included studies; the most common reason for exclusion is that the study population included master's students rather than doctoral students
+- **AI's role**: *Assistive/agentic* — check each paper against the criteria and quote the specific passage that justifies inclusion or exclusion. Humans make the final call here; this step is less validated by evidence than title/abstract screening (step 6)
+
+### 8. Data Extraction
+
+Characteristics and results from each included study are pulled into a piloted extraction form — ideally by two people independently, so extraction errors can be caught by comparison.
+
+- **Classic reference**: Li, Higgins & Deeks, *Cochrane Handbook*, ch. 5; Buscemi et al. (2006), *Journal of Clinical Epidemiology*, 59:697 — on error rates in single-reviewer extraction
+- **Worked example**: An extraction form captures sample size, programme length, the stress scale used, and the means/standard deviations reported by each study
+- **AI's role**: *Assistive/agentic* — pre-fill extraction fields with source quotes and page anchors so every value can be traced back to the original text. A human verifies every field, especially numeric data, where extraction errors are costliest
+
+### 9. Quality / Risk-of-Bias Appraisal
+
+Each included study's internal validity is judged using a domain-based appraisal tool matched to its study design — the tool for a randomized trial is different from the tool for an observational study.
+
+- **Classic reference**: Sterne et al. (2019), *BMJ*, 366:l4898 — RoB 2, for randomized trials; Sterne et al. (2016), *BMJ*, 355:i4919 — ROBINS-I, for non-randomised studies
+- **Worked example**: RoB 2 is applied to the 9 included trials, and ROBINS-I to the 5 non-randomised studies
+- **AI's role**: *Assistive only* — surface the quotes that support a judgement in each domain. The judgement itself stays human: this is the step where model–expert agreement is weakest across the whole process, and any AI-suggested judgement must be explicitly reported as such
+
+### 10. Synthesis & Certainty
+
+The findings from all included studies are combined — narratively, statistically via meta-analysis, or both — while exploring why studies might disagree (heterogeneity), and the overall certainty of the resulting evidence is rated.
+
+- **Classic reference**: Popay et al. (2006) — ESRC guidance on narrative synthesis; Campbell et al. (2020), *BMJ*, 368:l6890 — the SWiM reporting guideline; Guyatt et al. (2008), *BMJ*, 336:924 — the GRADE approach to rating certainty
+- **Worked example**: A random-effects meta-analysis is run on the 9 trials, a narrative synthesis covers the remaining studies, and the overall certainty of evidence is rated moderate
+- **AI's role**: *Agentic* — write and execute the analysis code, produce plots, and draft summary tables. Humans interpret the heterogeneity between studies and make the final certainty call
+
+### 11. Reporting
+
+The review's methods and results are written up transparently against a recognized reporting guideline, including a flow diagram tracking records from initial search through to final inclusion.
+
+- **Classic reference**: Page et al. (2021), *BMJ*, 372:n71 — PRISMA 2020; Tricco et al. (2018), *Annals of Internal Medicine*, 169:467 — PRISMA-ScR, for scoping reviews
+- **Worked example**: The write-up includes a PRISMA flow diagram, a completed reporting checklist, and a statement disclosing how AI tools were used
+- **AI's role**: *Agentic* — generate the flow diagram directly from search/screening logs, check the manuscript against the reporting checklist, and verify every reference against a DOI registry to catch fabricated citations. Humans write the discussion and disclose exactly how AI was used, in line with [Chapter 1's disclosure guidance](ch01-chapter-one.qmd#disclosing-ai-use)
+
+### 12. Updating / Living Review
+
+A review is not necessarily a one-off product. Searches can be re-run periodically and new evidence folded in, turning a static review into a "living" one.
+
+- **Classic reference**: Elliott et al. (2014), *PLoS Medicine*, 11:e1001603 — on living systematic reviews; Garner et al. (2016), *BMJ*, 354:i3507 — on when to update a review
+- **Worked example**: The searches are re-run every six months; two new trials are identified and added to the synthesis on the second update
+- **AI's role**: *Agentic* — schedule re-searches automatically, pre-screen the new records, and flag when new evidence might change the review's conclusions. This is arguably where AI agents add the most net value, since the marginal cost of a human re-doing this manually every few months is high
+
+::: {.callout-note}
+## Cross-Cutting Principles
+
+Two principles apply across all 12 steps, no matter which specific AI tool is (or isn't) involved, and they are unlikely to go out of date even as the tools themselves change:
+
+- **Full audit trail** — every prompt, model version, query, and decision should be logged, so the review remains reproducible and inspectable after the fact
+- **Human accountability** — a human remains responsible for every judgement the review makes, whether or not AI assisted in producing it
+
+This is the position taken by recent governance guidance for the field, including the RAISE recommendations for AI in evidence synthesis (Thomas et al., 2025), the joint Cochrane/Campbell/JBI/CEE position statement on AI in evidence synthesis (Flemyng et al., 2025), and ALLEA's *European Code of Conduct for Research Integrity* (2023) — the same code of conduct that underpins [Chapter 1's misconduct-avoidance guidance](ch01-chapter-one.qmd#avoiding-research-misconduct).
+:::
+
+## At a Glance
+
+A much shorter recap of the same 12 steps, for quick reference:
+
+| # | Step | In one line |
+|---|------|--------------|
+| 1 | Question & review type | Frame the question, pick the review type |
+| 2 | Check existing reviews | Make sure it hasn't been done already |
+| 3 | Protocol & registration | Pre-register your plan |
+| 4 | Search strategy | Turn concepts into search terms |
+| 5 | Run searches | Search, add grey literature, deduplicate |
+| 6 | Title/abstract screening | First pass against eligibility criteria |
+| 7 | Full-text screening | Second pass, full texts, reasons recorded |
+| 8 | Data extraction | Pull study data into an extraction form |
+| 9 | Quality appraisal | Judge each study's risk of bias |
+| 10 | Synthesis & certainty | Combine results, rate the evidence |
+| 11 | Reporting | Write it up against a reporting guideline |
+| 12 | Updating | Re-run it and keep it current |
+
+::: {.callout-note}
+## Takeaways
+
+- A literature review searches, evaluates, and synthesizes existing research — the depth of the process depends on the review type (systematic, narrative, or meta-analytic)
+- Recall and precision trade off against each other; a systematic search balances both rather than maximizing either alone
+- The 12-step process runs from framing the question to keeping the review updated, and each step rests on its own classic methodological reference
+- AI can plausibly help at every step, but its role ranges from purely *assistive* to fully *agentic* — and a human stays accountable for every judgement throughout
+- A full audit trail and human accountability are the two principles that hold regardless of which specific AI tool is used
+:::
 
 ## References
 
-1. Author, A. (Year). *Placeholder Title One*. Publisher. [example.com](https://example.com)
-2. Author, B., & Author, C. (Year). *Placeholder Title Two*. Journal Name. [example.com](https://example.com)
-3. Author, D. (Year). *Placeholder Title Three*. [example.com](https://example.com)
+1. Oulu University Library. (n.d.). *Systematic Searching* [LibGuide]. [libguides.oulu.fi](https://libguides.oulu.fi/c.php?g=697494&p=5008493)
+2. Grant, M. J., & Booth, A. (2009). A typology of reviews: an analysis of 14 review types and associated methodologies. *Health Information & Libraries Journal*, 26(2), 91–108.
+3. Higgins, J. P. T., et al. (Eds.). *Cochrane Handbook for Systematic Reviews of Interventions* (chs. 4–5, on search strategy, screening, and data extraction). [training.cochrane.org/handbook](https://training.cochrane.org/handbook)
+4. Richardson, W. S., et al. (1995). The PICO framework for well-built clinical questions. *ACP Journal Club*, 123, A12.
+5. Cooke, A., Smith, D., & Booth, A. (2012). The SPIDER framework for qualitative evidence synthesis. *Qualitative Health Research*, 22(10), 1435–1443.
+6. Booth, A., et al. (2012). PROSPERO, the international register of systematic reviews. *Systematic Reviews*, 1, 2.
+7. Moher, D., et al. (2015). PRISMA-P: preferred reporting items for systematic review and meta-analysis protocols. *Systematic Reviews*, 4, 1.
+8. McGowan, J., et al. (2016). PRESS peer review of electronic search strategies. *Journal of Clinical Epidemiology*, 75, 40–46.
+9. Paez, A. (2017). Grey literature: an important resource in systematic reviews. *Journal of Evidence-Based Medicine*, 10(3), 233–240.
+10. Wohlin, C. (2014). Guidelines for snowballing in systematic literature studies. *Proceedings of EASE*.
+11. Bramer, W. M., et al. (2016). De-duplication of database search results for systematic reviews. *Journal of the Medical Library Association*, 104(3), 240–243.
+12. Waffenschmidt, S., et al. (2019). Single screening versus conventional double screening for study selection. *BMC Medical Research Methodology*, 19, 132.
+13. van de Schoot, R., et al. (2021). An open source machine learning framework for efficient and transparent systematic reviews. *Nature Machine Intelligence*, 3, 125–133.
+14. Buscemi, N., et al. (2006). Single data extraction generated more errors than double data extraction in systematic reviews. *Journal of Clinical Epidemiology*, 59(7), 697–703.
+15. Sterne, J. A. C., et al. (2019). RoB 2: a revised tool for assessing risk of bias in randomised trials. *BMJ*, 366, l4898.
+16. Sterne, J. A. C., et al. (2016). ROBINS-I: a tool for assessing risk of bias in non-randomised studies of interventions. *BMJ*, 355, i4919.
+17. Popay, J., et al. (2006). *Guidance on the Conduct of Narrative Synthesis in Systematic Reviews*. ESRC Methods Programme.
+18. Campbell, M., et al. (2020). Synthesis without meta-analysis (SWiM) in systematic reviews. *BMJ*, 368, l6890.
+19. Guyatt, G. H., et al. (2008). GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. *BMJ*, 336, 924–926.
+20. Page, M. J., et al. (2021). The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. *BMJ*, 372, n71.
+21. Tricco, A. C., et al. (2018). PRISMA extension for scoping reviews (PRISMA-ScR). *Annals of Internal Medicine*, 169(7), 467–473.
+22. Elliott, J. H., et al. (2014). Living systematic reviews: an emerging opportunity to narrow the evidence-practice gap. *PLoS Medicine*, 11(2), e1001603.
+23. Garner, P., et al. (2016). When and how to update systematic reviews: consensus and checklist. *BMJ*, 354, i3507.
+24. Thomas, J., et al. (2025). *RAISE 1: Recommendations for Practice*. OSF. [doi.org/10.17605/OSF.IO/FWAUD](https://doi.org/10.17605/OSF.IO/FWAUD)
+25. Flemyng, E., et al. (2025). Using artificial intelligence in evidence synthesis: a joint Cochrane, Campbell Collaboration, JBI, and Collaboration for Environmental Evidence position statement.
+26. ALLEA — All European Academies. (2023). *The European Code of Conduct for Research Integrity* (rev. ed.).
