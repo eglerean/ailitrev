@@ -1,62 +1,39 @@
----
-title: "Preface"
----
+# Preface {.unnumbered}
 
 ::: {.callout-warning}
-## Template Preface
+## Draft — Not Yet Reviewed
 
-This is a placeholder preface included to demonstrate the structure of this book template. Replace this content with your own introduction before publishing.
+This book is a work in progress. Content below is subject to revision.
 :::
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Generative AI has become part of daily research work — including, increasingly, the literature review. This book is a short, practical guide to both halves of that sentence: what generative AI actually is and how to use it responsibly in research, and how a literature review works well enough that you can tell when AI is helping versus when it's quietly making decisions on your behalf. It's meant to be read start to finish in an afternoon, or dipped into chapter by chapter as a reference.
 
 ::: {.callout-note}
 ## Learning Outcomes
 
 By the end of this book you will be able to:
 
-- Lorem ipsum dolor sit amet consectetur adipiscing elit
-- Sed do eiusmod tempor incididunt ut labore et dolore
-- Ut enim ad minim veniam quis nostrud exercitation
-- Duis aute irure dolor in reprehenderit in voluptate
+- Explain what generative AI is, where it fits into the research lifecycle, and how to use and disclose it responsibly (Chapter 1)
+- Describe, at an intuitive level, how large language models and AI agents actually work (Appendix A)
+- Define a literature review, distinguish its main types, and walk through the 12 steps of doing one systematically (Chapter 2)
+- Summarize the evidence on how well today's AI tools perform at each of those 12 steps — and where they currently fail (Chapter 3)
+- Apply a five-level framework for responsibly delegating parts of a literature review to AI, from consulting it for search terms to auditing a fully autonomous review (Chapter 4)
+- Find further courses, lectures, and reference material to go deeper on any of the above (Appendix B)
 :::
 
 ## What This Book Covers
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-- Lorem ipsum dolor sit amet
-- Consectetur adipiscing elit
-- Sed do eiusmod tempor incididunt
+- **Chapter 1 — Foundations of AI in Research**: what generative AI is, where it can help across the research lifecycle, the misconduct risks it creates, and when you're required to disclose using it
+- **Chapter 2 — Literature Review Foundations**: what a literature review is, the main review types, and the 12-step process behind a systematic one
+- **Chapter 3 — AI-Assisted Literature Review**: a step-by-step look at the evidence on how well AI tools actually perform each of those 12 steps
+- **Chapter 4 — A Framework for Responsible AI-Assisted Literature Review**: a five-level spectrum, from AI as consultant to AI as autonomous reviewer, for deciding how much of the process to delegate
+- **Appendix A — Basics of Large Language Models and AI Agents**: an intuitive, example-driven explanation of how LLMs generate text and how AI agents act
+- **Appendix B — Further Readings**: an annotated bibliography of free courses, lectures, and guides for going further
 
 ## How to Use This Book
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Each chapter opens with a short synopsis and a Learning Outcomes box like the one above, and closes with a Takeaways box and a References section, so you can preview or recap a chapter without reading it end to end. Chapters 1–2 are the fundamentals; Chapters 3–4 build directly on them, so read those two in order. The appendices are optional background and reference material — read Appendix A whenever the mechanics of LLMs or agents come up, and treat Appendix B as a shelf to come back to.
 
-- Duis aute irure dolor in reprehenderit
-- In voluptate velit esse cillum dolore
-- Excepteur sint occaecat cupidatat non proident
+## About the Author
 
-::: {.callout-tip}
-## Discussion Activity
-
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris?
-:::
-
-## Practical Exercises
-
-### Exercise 1 — Sample exercise title
-**Tool**: [Example Tool](https://example.com)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-### Exercise 2 — Sample exercise title
-**Tool**: [Example Tool](https://example.com)
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-## References
-
-1. Author, A. (Year). *Placeholder Title One*. Publisher. [example.com](https://example.com)
-2. Author, B., & Author, C. (Year). *Placeholder Title Two*. Journal Name. [example.com](https://example.com)
+This book is written by **Enrico Glerean**, a Staff Scientist at Aalto University, where he teaches AI and research work to doctoral students and researchers — including the university's Research Ethics course and, with Pedro Silva, the "AI and Research Work" workshop series this book draws on. He also works with Aalto Data Agents on practical, responsible AI use in research.
